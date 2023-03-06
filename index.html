@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | E-commerce product page</title>
+
+</head>
+<body>
+
+  <div class="show hidden">
+
+    <button onclick="hidePhoto()"><img class="close" src="images/icon-close.svg" alt=""></button>
+
+    <button onclick="nextPhoto()"><img class="arrow left" src="images/icon-previous.svg" alt=""></button>
+
+    <img class="photo" src="images/image-product-1.jpg" alt="">
+    <img class="photo" src="images/image-product-2.jpg" alt="">
+    <img class="photo hidden" src="images/image-product-3.jpg" alt="">
+    <img class="photo hidden" src="images/image-product-4.jpg" alt="">
+
+    <button onclick="nextPhoto()"><img class="arrow right" src="images/icon-next.svg" alt=""></button>
+
+  </div>
+
+  <main class="hero">
+
+    <nav class="nav-bar">
+
+      <button class="hamburger"><img src="images/icon-menu.svg" alt=""></button>
+
+      <img src="images/logo.svg" alt="">
+
+      <div class="left-side active">
+
+        <button class="close-left-btn"><img class="close-left" src="images/icon-close.svg"></button>
+
+        <a href="#">Collections</a> 
+        <a href="#">Men</a>
+        <a href="#">Women</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+
+      </div>
+
+      <div class="right-side">
+
+        <div class="shopping-cart-and-buy">
+
+          <p class="bought-items hidden"></p>
+
+          <button class="shopping-cart"><img src="images/icon-cart.svg" alt=""></button>
+
+          <div class="checkout hidden">
+
+            <p class="bold">Cart</p>
+
+            <hr class="hr2">
+
+            <div class="checkout-container">
+
+              <img class="small" src="images/image-product-1-thumbnail.jpg" alt="">
+
+              <p class="font-small">Fall Limited Edition Sneakers</p>
+
+              <button class="delete"><img src="images/icon-delete.svg" alt=""></button>
+
+            </div>
+
+            <p class="checkout-price"></p>
+
+              <button class="checkout-btn">Checkout</button>
+
+          </div>
+
+        </div>
+
+          <button class="avatar"><img class="avatar" src="images/image-avatar.png" alt=""></button>
+
+      </div>
+
+    </nav>
+
+    <hr class="hr">
+
+    <div class="without-nav">
+
+      <div class="photos-container">
+
+        <img class="big-photo cursor" onclick="showPhoto()" src="images/image-product-1.jpg" alt="">
+
+        <div class="thumbnails">
+
+          <img class="small-photo cursor" onclick="showPhoto()" src="images/image-product-1-thumbnail.jpg" alt="">
+          <img class="small-photo cursor" onclick="showPhoto()" src="images/image-product-2-thumbnail.jpg" alt="">
+          <img class="small-photo cursor" onclick="showPhoto()" src="images/image-product-3-thumbnail.jpg" alt="">
+          <img class="small-photo cursor" onclick="showPhoto()" src="images/image-product-4-thumbnail.jpg" alt="">
+
+        </div>
+
+      </div>
+      
+      <div class="text-container">
+
+        <p class="orange">Sneaker Company</p>
+
+        <h1>Fall Limited Edition Sneakers</h1>
+
+        <p class="paragraph">These low-profile sneakers are your perfect casual wear companion. Featuring a 
+        durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+
+        <div class="price-container">
+
+          <div class="price-and-discount">
+
+            <p class="price">$125.00</p>
+            <p class="orange pale-orange">50%</p>
+
+          </div>
+
+          <p class="opacity">$250.00</p>
+
+        </div>
+
+        <div class="buy-container">
+
+          <div class="plus-and-minus">
+
+            <button class="minus"><img src="images/icon-minus.svg" alt=""></button>
+            <p class="number">0</p>
+            <button class="plus"><img src="images/icon-plus.svg" alt=""></button>
+
+          </div>
+
+          <div class="add-to-cart-container">
+
+            <img src="images/icon-cart.svg" alt="">
+
+            <button class="add-to-cart">Add to cart</button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Krystian Czeszewski</a>.
+    </div>
+
+  </main>
+
+<script src="index.js"></script>
+
+</body>
+</html>
